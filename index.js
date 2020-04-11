@@ -15,8 +15,6 @@ memcached.add(counterKey, 0, 3600, function (err) {
  });
 
 app.get('/', (req, res) => {
-  console.log('I received a request.');
-
   memcached.incr(counterKey, 1, function (err) {
     if(err) {console.error(err)};
   });
