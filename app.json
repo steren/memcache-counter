@@ -1,0 +1,8 @@
+{
+    "env": {
+        "MEMCACHE_ENDPOINT": {
+            "description": "private IP and port of your memcached instance",
+            "required": true
+        }
+    }
+}
